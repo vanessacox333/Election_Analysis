@@ -1,0 +1,99 @@
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Python_practice.py
+        Resources/
+        analysis/
+        python__practice/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ ls
+Python_practice.py  README.md  Resources/  analysis/  python__practice/
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git add  python__practice/PyPoll.py
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git commit -m "Uploaded challenge 3 (yay!)"
+bash: !: event not found
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git commit -m "uploaded challenge 3"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Owner@DESKTOP-8Q7UUIP.(none)')
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git push
+Everything up-to-date
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ ls
+Python_practice.py  README.md  Resources/  analysis/  python__practice/
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git config --global user.email "vanessacox6@gmail.com"
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git config --global user.name "Vanessa"
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git add python__practice/PyPoll.py
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git commit -m "uploading file"
+[main 1f8f398] uploading file
+ 1 file changed, 25 insertions(+)
+ create mode 100644 python__practice/PyPoll.py
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 750 bytes | 375.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vanessacox333/Election_Analysis.git
+   b115980..1f8f398  main -> main
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git add Resources/
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git commit -m "adding resources folder"
+[main 9e3d3e0] adding resources folder
+ 1 file changed, 369712 insertions(+)
+ create mode 100644 Resources/election_results.csv
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.57 MiB | 289.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vanessacox333/Election_Analysis.git
+   1f8f398..9e3d3e0  main -> main
+
+Owner@DESKTOP-8Q7UUIP MINGW64 ~/OneDrive - Western Washington University/Documents/Bootcamp/Election_Analysis (main)
+$
