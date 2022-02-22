@@ -91,7 +91,10 @@ with open(file_to_save, "w") as txt_file:
     # Save the final vote count to the text file.
     txt_file.write(election_results)
 
-
+    spacing = (
+        f"\nCounty Votes:\n")
+    
+    txt_file.write(spacing)
 
    # 6a: Write a for loop to get the county from the county dictionary.
     for county_name in county_votes:
@@ -108,21 +111,34 @@ with open(file_to_save, "w") as txt_file:
 
          # 6e: Save the county votes to a text file.
         
+        county_votes_summary = (
+                f"{county_name}: {cvote_percentage:.1f}% ({cvotes:,})\n")
+                
         
+        txt_file.write(county_votes_summary)  
+       
+
 
 
          # 6f: Write an if statement to determine the winning county and get its vote count.
         
-            
+        if cvotes > lt_votes:
+            lt_votes = cvotes
+            largest_turnout = county_name
         
 
 
     # 7: Print the county with the largest turnout to the terminal.
 
-    print(largest_turnout)
+        print(largest_turnout)
 
     # 8: Save the county with the largest turnout to a text file.
- 
+    turnout_summary = (
+        f"\n-------------------------\n"
+        f"Largest County Turnout: {largest_turnout}\n"
+        f"-------------------------\n")
+    
+    txt_file.write(turnout_summary)
 
 
     for candidate_name in candidate_votes:
@@ -135,7 +151,11 @@ with open(file_to_save, "w") as txt_file:
         candidate_results = (f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
         print(candidate_results)
         # Save the candidate results to our text file.
-        txt_file.write(candidate_results)
+
+        candidate_summary = (
+            f"\n{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n"
+        )
+        txt_file.write(candidate_summary)
 
         # print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
 
@@ -155,7 +175,7 @@ with open(file_to_save, "w") as txt_file:
 
     # Print winning count, %, and candidate
     winning_candidate_summary = (
-        f"-------------------------\n"
+        f"\n-------------------------\n"
         f"Winner: {winning_candidate}\n"
         f"Winning Vote Count: {winning_count:,}\n"
         f"Winning Percentage: {winning_percentage:.1f}%\n"
