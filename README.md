@@ -14,6 +14,9 @@ The purpose of this analysis is to assist the Colorado Board of Elections in an 
 
 ## Election-Audit Summary: In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
 
+![election_results](https://user-images.githubusercontent.com/98576235/155270516-971301ab-cbf8-4065-9770-54e055a28652.png)
+
+
 
 The written analysis has the following structure, organization, and formatting:
 
