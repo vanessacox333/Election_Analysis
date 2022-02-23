@@ -17,9 +17,7 @@ The code used to obtain the Colorado election results can be replicated among ot
 
 import csv
 import os
-# Assign a variable to load a file from a path.
 file_to_load = os.path.join("Resources", "election_results.csv")
-# Assign a variable to save the file to a path.
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 Once this is corrected for each new data set, the results will be similar to the picture below:
