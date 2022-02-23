@@ -13,7 +13,7 @@ The purpose of this analysis is to assist the Colorado Board of Elections in an 
 * Diana DeGette was the winner of the election with a total of 272,892 votes, representing 73.8% of the total candidate votes received
 
 ## Election-Audit Summary: 
-The code used to obtain the Colorado election results can be replicated among other congressional precinct elections so long as election data is stored in a .csv file with the same format as the Colorado election .csv file (Column 1: "Voter ID", Column 2: "County", Column 3: "Candidate". If so, the only part of the script that will need to be edited is the code to load and save the .csv and .txt files:
+The code used to obtain the Colorado election results can be replicated among other congressional precinct elections so long as election data is stored in a .csv file with the same format as the Colorado election .csv file (Column 1: "Voter ID", Column 2: "County", Column 3: "Candidate"). If so, the only part of the script that will need to be edited is the code to load and save the .csv and .txt files:
 
 import csv\
 import os\
@@ -23,15 +23,6 @@ file_to_save = os.path.join("analysis", "election_analysis.txt")
 Once this is corrected for each new data set, the results will be similar to the picture below:
 ![Colorado Election Results](https://user-images.githubusercontent.com/98576235/155270516-971301ab-cbf8-4065-9770-54e055a28652.png)
 
+The code created for the Colorado election can also be used, with some manipulation, to tabulate the electoral college votes during the presidential election. In the .csv file, the format would change to: Column 1: "State", Column 2: "Electoral College Votes", Column 3: "Candidate". The code would then have to be tweaked to change variable names, delete unnecessary code, and add code to count the electoral college votes for each of the candidates, but a solid backbone is provided with the code already created.
 
 
-The written analysis has the following structure, organization, and formatting:
-
-There is a title, and there are multiple sections. (2 pt)
-
-Each section has a heading. (2 pt)
-
-Links to images are working, and code is formatted and displayed correctly. (2 pt)
-
-Analysis (14 points)
-The written analysis has the following:
