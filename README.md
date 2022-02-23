@@ -15,10 +15,10 @@ The purpose of this analysis is to assist the Colorado Board of Elections in an 
 ## Election-Audit Summary: 
 The code used to obtain the Colorado election results can be replicated among other congressional precinct elections so long as election data is stored in a .csv file with the same format as the Colorado election .csv file (Column 1: "Voter ID", Column 2: "County", Column 3: "Candidate". If so, the only part of the script that will need to be edited is the code to load and save the .csv and .txt files:
 
-import csv
-import os
-file_to_load = os.path.join("Resources", "election_results.csv")
-file_to_save = os.path.join("analysis", "election_analysis.txt")
+import csv\
+import os\
+file_to_load = os.path.join("Resources", "election_results.csv")\
+file_to_save = os.path.join("analysis", "election_analysis.txt")\
 
 Once this is corrected for each new data set, the results will be similar to the picture below:
 ![Colorado Election Results](https://user-images.githubusercontent.com/98576235/155270516-971301ab-cbf8-4065-9770-54e055a28652.png)
