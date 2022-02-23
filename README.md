@@ -1,6 +1,6 @@
 # School District Election Analysis
 ## Overview of Election Audit:
-The purpose of this analysis is to assist the Colorado Board of Elections in election an audit for the United States Congressional Precinct in Colorado. The audit is typically done in Excel, but the Board of Elections wants to see how it can be done in Python, so that the code may be used across other congressional districts for election audits around the country.
+The purpose of this analysis is to assist the Colorado Board of Elections in an election audit for the United States Congressional Precinct in Colorado. The audit is typically done in Excel, but the Board of Elections wants to see how it can be done in Python, so that the code may be used across other congressional districts for election audits around the country.
 
 ## Election-Audit Results:
 * There were 369,711 votes cast in this congressional election 
